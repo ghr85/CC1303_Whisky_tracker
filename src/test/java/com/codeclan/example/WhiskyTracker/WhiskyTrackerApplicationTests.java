@@ -24,7 +24,7 @@ public class WhiskyTrackerApplicationTests {
 	@Test
 	public void findWhiskiesByYear() {
 		List<Whisky> found = whiskyRepository.findWhiskiesByYear(1991);
-		assertEquals("The Flying Dutchman", found.get(0).getName());
+		assertEquals("The Rosebank 12 - Flora and Fona", found.get(0).getName());
 	}
 
 }
