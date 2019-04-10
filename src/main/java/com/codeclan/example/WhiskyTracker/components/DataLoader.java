@@ -50,5 +50,8 @@ public class DataLoader implements ApplicationRunner {
 
         Distillery distillery4 = new Distillery("Balvenie", "Speyside");
         distilleryRepository.save(distillery4);
+
+        Whisky whisky5 = new Whisky("Balvenie Caribbean Cask", 14, 2019, distillery4);
+        whiskyRepository.save(whisky5);
     }
 }

@@ -5,5 +5,6 @@ import com.codeclan.example.WhiskyTracker.models.Whisky;
 import java.util.List;
 
 public interface WhiskyRepositoryCustom {
-    public List<Whisky> findWhiskiesByYear(int year);
+    List<Whisky> findWhiskiesByYear(int year);
+    List<Whisky> findWhiskyByDistilleryAndAge(String distillery,int age);
 }
