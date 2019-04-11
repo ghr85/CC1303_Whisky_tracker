@@ -43,11 +43,15 @@ public class WhiskyTrackerApplicationTests {
 	   assertEquals("Balvenie Caribbean Cask",found.get(0).getName());
     }
     @Test
-    public void getWhiskiesByRegion(){
-	    List<Whisky> found =whiskyRepository.findWhiskiesByRegion("Speyside");
-	    assertEquals(2,found.size());
-
-        
+    public void getWhiskiesByRegion() {
+        List<Whisky> found = whiskyRepository.findWhiskiesByRegion("Speyside");
+        assertEquals(2, found.size());
     }
+    @Test
+            public void getDistilleriesByWhiskyAge(){
+        List<Distillery> found = distilleryRepository.findDistilleriesByWhiskyAge(15);
+        assertEquals("Glendronach",found.get(0).getName());
+        }
+    
 
 }
