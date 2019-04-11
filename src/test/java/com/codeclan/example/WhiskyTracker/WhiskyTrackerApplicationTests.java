@@ -52,6 +52,6 @@ public class WhiskyTrackerApplicationTests {
         List<Distillery> found = distilleryRepository.findDistilleriesByWhiskyAge(15);
         assertEquals("Glendronach",found.get(0).getName());
         }
-    
+
 
 }
